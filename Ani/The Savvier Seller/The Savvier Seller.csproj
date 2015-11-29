@@ -75,23 +75,10 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="ani_GalleryShopBase.cs" />
-    <Compile Include="ani_StoreBaseInfo.cs" />
-    <Compile Include="ani_StoreRug.cs" />
     <Compile Include="ani_StoreSetParkingSpace.cs" />
     <Compile Include="ani_StoreSetPedestal.cs" />
     <Compile Include="ani_StoreShelf.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Shopping\ShoppingMeter.cs" />
-    <Compile Include="Shopping\ShoppingProgress.cs" />
-    <Compile Include="StoreHelperClass.cs" />
-    <Compile Include="ani_GalleryShopRegister.cs" />
-    <Compile Include="CMStoreSet.cs" />
-    <Compile Include="RegisterInfo.cs" />
-    <Compile Include="TaxCollectorSimpleDialog.cs" />
-    <Compile Include="RestockInfo.cs" />
-    <Compile Include="RestockItem.cs" />
-    <Compile Include="RestockItemHelperClass.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Sims3GameplaySystems">
@@ -134,12 +121,6 @@
     <Reference Include="RealJam">
       <HintPath>..\..\..\..\Desktop\StoreObjectsJamMakingStation.dll</HintPath>
     </Reference>
-    <Reference Include="ani_StoreRestockItem">
-      <HintPath>..\..\..\..\Desktop\ani_StoreRestockItem.dll</HintPath>
-    </Reference>
-    <Reference Include="ani_StoreSetBase">
-      <HintPath>..\..\..\..\Desktop\ani_StoreSetBase.dll</HintPath>
-    </Reference>
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.0">
@@ -174,4 +155,13 @@
   <PropertyGroup>
     <PostBuildEvent>xcopy /y "$(ProjectDir)$(OutDir)$(TargetFileName)" "$(ProjectDir)DLL\"</PostBuildEvent>
   </PropertyGroup>
+  <ItemGroup>
+    <Folder Include="Shopping\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="ani_StoreRestockItem\ani_StoreRestockItem.csproj">
+      <Project>{88797CA1-2AC7-420C-AB22-A1C9574500F8}</Project>
+      <Name>ani_StoreRestockItem</Name>
+    </ProjectReference>
+  </ItemGroup>
 </Project>

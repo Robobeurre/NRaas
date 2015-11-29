@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{88797CA1-2AC7-420C-AB22-A1C9574500F8}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>ani_StoreRestockItem</RootNamespace>
+    <AssemblyName>ani_StoreRestockItem</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <NoStdLib>true</NoStdLib>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <NoStdLib>true</NoStdLib>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RestockInfo.cs" />
+    <Compile Include="RestockItem.cs" />
+    <Compile Include="RestockItemHelperClass.cs" />
+    <Compile Include="ani_GalleryShopBase.cs" />
+    <Compile Include="CMStoreSet.cs" />
+    <Compile Include="ani_StoreBaseInfo.cs" />
+    <Compile Include="ani_GalleryShopRegister.cs" />
+    <Compile Include="StoreHelperClass.cs" />
+    <Compile Include="RegisterInfo.cs" />
+    <Compile Include="ani_StoreRug.cs" />
+    <Compile Include="ShoppingMeter.cs" />
+    <Compile Include="ShoppingProgress.cs" />
+    <Compile Include="TaxCollectorSimpleDialog.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <Reference Include="mscorlib">
+      <HintPath>..\..\..\Sims3\Compiler\0x28EE9D383A73463E_mscorlib.dll</HintPath>
+    </Reference>
+    <Reference Include="RealJam">
+      <HintPath>..\..\..\..\..\Desktop\StoreObjectsJamMakingStation.dll</HintPath>
+    </Reference>
+    <Reference Include="ScriptCore">
+      <HintPath>..\..\..\Sims3\Compiler\0x78CF6CF5304D0C4F_ScriptCore.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="SimIFace">
+      <HintPath>..\..\..\Sims3\Compiler\0xC356DF69B70ADD42_SimIFace.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sims3GameplayObjects">
+      <HintPath>..\..\..\Sims3\Compiler\0xB9C90FDC6793BC0A_Sims3GameplayObjects.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sims3GameplaySystems">
+      <HintPath>..\..\..\Sims3\Compiler\0x03D6C8D903CE868C_Sims3GameplaySystems.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sims3Metadata">
+      <HintPath>..\..\..\Sims3\Compiler\0x600F9EA1DDC99FB1_Sims3MetaData.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sims3StoreObjects">
+      <HintPath>..\..\..\Sims3\Compiler\0x0CAE1C361E05B2B3_Sims3StoreObjects.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System">
+      <HintPath>..\..\..\Sims3\Compiler\0x342EE04373CF1E1C_System.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml">
+      <HintPath>..\..\..\Sims3\Compiler\0x6AC101133051BEF1_System.Xml.dll</HintPath>
+    </Reference>
+    <Reference Include="UI">
+      <HintPath>..\..\..\Sims3\Compiler\0xF7C3ADE896D4E765_UI.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="ani_StoreRestockItem">
+      <HintPath>..\..\..\..\..\Desktop\ani_StoreRestockItem.dll</HintPath>
+    </Reference>
+    <Reference Include="ani_StoreSetBase">
+      <HintPath>..\..\..\..\..\Desktop\ani_StoreSetBase.dll</HintPath>
+    </Reference>
+    <Reference Include="ani_StoreSetRegister">
+      <HintPath>..\..\..\..\..\Desktop\ani_StoreSetRegister.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+</Project>
